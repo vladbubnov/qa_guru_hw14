@@ -1,4 +1,4 @@
-from selene import browser, by
+from selene import browser, by, be
 
 
 class OrderPage:
@@ -38,7 +38,11 @@ class OrderPage:
         browser.element("[placeholder='Комментарий для курьера']").type(value)
 
     def click_order_btn(self):
-        browser.element(by.text("Заказать")).click()
+        browser.element("//button[contains(@class, 'Button_Button__ra12g') and contains(@class, "
+                        "'Button_Middle__1CSJM') and text()='Заказать']").click()
 
     def click_confirm_btn(self):
         browser.element(by.text("Да")).click()
+
+    def should_visible_status_btn(self):
+        browser.element(by.text("Посмотреть статус")).should(be.visible)

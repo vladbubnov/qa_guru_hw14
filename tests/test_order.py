@@ -53,4 +53,7 @@ def test_order_in_header_button(browser_management):
         order_page.click_order_btn()
 
     with allure.step("Нажимаем кнопку 'Да' в модальном окне 'Хотите оформить заказ?'"):
-        order_page.click_order_btn()
+        order_page.click_confirm_btn()
+
+    with allure.step("Отображается кнопка 'Проверить статус'"):
+        order_page.should_visible_status_btn()
