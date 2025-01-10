@@ -1,6 +1,3 @@
-import datetime
-import time
-
 from selene import browser, by
 
 
