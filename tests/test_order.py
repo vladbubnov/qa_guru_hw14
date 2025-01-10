@@ -1,6 +1,8 @@
 import allure
+from selene import have
 
 from data import users
+from pages.home_page import HomePage
 from pages.order_page import OrderPage
 
 
@@ -57,3 +59,44 @@ def test_order_in_header_button(browser_management):
 
     with allure.step("Отображается кнопка 'Проверить статус'"):
         order_page.should_visible_status_btn()
+
+
+@allure.tag('web')
+@allure.feature("Заказ самоката")
+@allure.story("Заказ самоката")
+@allure.severity(allure.severity_level.CRITICAL)
+@allure.label("owner", "Vladislav Bubnov")
+@allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в хедере")
+@allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
+def test_order_btn_on_header(browser_management):
+    browser = browser_management
+    home_page = HomePage()
+
+    with allure.step("Открываем домашнюю страницу"):
+        browser.open("/")
+
+    with allure.step("Нажимаем на кнопку 'Заказать' в хедере"):
+        home_page.click_order_header_btn()
+        browser.should(have.url_containing('/order'))
+
+
+@allure.tag('web')
+@allure.feature("Заказ самоката")
+@allure.story("Заказ самоката")
+@allure.severity(allure.severity_level.CRITICAL)
+@allure.label("owner", "Vladislav Bubnov")
+@allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в футере")
+@allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
+def test_order_btn_on_footer(browser_management):
+    browser = browser_management
+    home_page = HomePage()
+
+    with allure.step("Открываем домашнюю страницу"):
+        browser.open("/")
+
+    with allure.step("Закрываем сообщение и использовании кук"):
+        home_page.click_accept_cookie()
+
+    with allure.step("Нажимаем на кнопку 'Заказать' в футере"):
+        home_page.click_order_footer_btn()
+        browser.should(have.url_containing('/order'))
