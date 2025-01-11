@@ -11,7 +11,7 @@ from pages.order_page import OrderPage
 @allure.story("Заказ самоката")
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.label("owner", "Vladislav Bubnov")
-@allure.description("Тест заказ самоката")
+@allure.description("Проверка заполнения полей")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
 def test_order_in_header_button(browser_management):
     browser = browser_management
@@ -57,8 +57,14 @@ def test_order_in_header_button(browser_management):
     with allure.step("Нажимаем кнопку 'Да' в модальном окне 'Хотите оформить заказ?'"):
         order_page.click_confirm_btn()
 
-    with allure.step("Отображается кнопка 'Проверить статус'"):
-        order_page.should_visible_status_btn()
+    with allure.step("Нажимаем на кнопку 'Проверить статус'"):
+        order_page.click_status_btn()
+
+    with allure.step("Нажимаем на кнопку 'Проверить статус'"):
+        order_page.get_user_data()
+
+
+
 
 
 @allure.tag('web')

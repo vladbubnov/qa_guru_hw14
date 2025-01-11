@@ -44,5 +44,11 @@ class OrderPage:
     def click_confirm_btn(self):
         browser.element(by.text("Да")).click()
 
-    def should_visible_status_btn(self):
-        browser.element(by.text("Посмотреть статус")).should(be.visible)
+    def click_status_btn(self):
+        browser.element(by.text("Посмотреть статус")).click()
+
+
+    def get_user_data(self):
+        elements = browser.element("[class='Track_Value__15eEX']")
+        texts = [element.text for element in elements]
+        return texts
