@@ -1,4 +1,4 @@
-from selene import browser, by, be
+from selene import browser, by, be, have
 
 
 class OrderPage:
@@ -48,7 +48,16 @@ class OrderPage:
         browser.element(by.text("Посмотреть статус")).click()
 
 
-    def get_user_data(self):
-        elements = browser.element("[class='Track_Value__15eEX']")
-        texts = [element.text for element in elements]
-        return texts
+    def should_user_with(self, first_name, last_name, address, station, telephone,
+                                    delivery_date, period_rent, bike_colour):
+        browser.element("//div[contains(@class, 'Track_OrderInfo__2fpDL')]").all("//div[contains(@class, 'Track_Value__15eEX')]").even.should(have.exact_texts(
+            first_name,
+            last_name,
+            address,
+            station,
+            telephone,
+            delivery_date,
+            period_rent,
+            bike_colour
+        )
+        )
