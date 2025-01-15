@@ -1,4 +1,4 @@
-from selene import browser
+from selene import browser, have, command
 
 
 class HomePage:
@@ -12,3 +12,19 @@ class HomePage:
 
     def click_accept_cookie(self):
         browser.element("#rcc-confirm-button").click()
+
+    def click_accept_cookie(self):
+        browser.element("#rcc-confirm-button").click()
+
+    def turn_questions_about_important(self):
+        element = browser.element("[class='Home_FAQ__3uVm4']")
+
+        # Выполняем прокрутку к элементу
+        element.perform(command.js.scroll_into_view)
+
+    def click_dropdown_list(self, dropdown_id):
+        browser.element(f"#accordion__heading-{dropdown_id}").click()
+
+    def should_text_dropdown_list_with(self, dropdown_id, expected_dropdown_text, expected_dropdown_value_text):
+        browser.element(f"#accordion__heading-{dropdown_id}").should(have.text(expected_dropdown_text))
+        browser.element(f"#accordion__panel-{dropdown_id}").should(have.text(expected_dropdown_value_text))

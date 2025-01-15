@@ -8,8 +8,8 @@ from selenium.webdriver.chrome.options import Options
 
 from utils import attach
 
-DEFAULT_BROWSER_NAME = "opera"
-DEFAULT_BROWSER_VERSION = "106.0"
+DEFAULT_BROWSER_NAME = "chrome"
+DEFAULT_BROWSER_VERSION = "100.0"
 
 
 def pytest_addoption(parser):
