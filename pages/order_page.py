@@ -48,14 +48,14 @@ class OrderPage:
         browser.element(by.text("Посмотреть статус")).click()
 
 
-    def should_user_with(self, first_name, last_name, address, station, telephone,
+    def should_user_with(self, first_name, last_name, address, station, phone_number,
                                     delivery_date, period_rent, bike_colour):
         browser.element("//div[contains(@class, 'Track_OrderInfo__2fpDL')]").all("//div[contains(@class, 'Track_Value__15eEX')]").even.should(have.exact_texts(
             first_name,
             last_name,
             address,
             station,
-            telephone,
+            phone_number,
             delivery_date,
             period_rent,
             bike_colour

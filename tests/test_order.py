@@ -61,7 +61,8 @@ def test_order_in_header_button(browser_management):
         order_page.click_status_btn()
 
     with allure.step("Нажимаем на кнопку 'Проверить статус'"):
-        order_page.should_user_with()
+        order_page.should_user_with(user.first_name, user.last_name, user.address, user.station, user.phone_number,
+                                    user.date_delivery, user.rent_period, user.bike_colour)
 
 
 
