@@ -1,7 +1,7 @@
 ## Пример отчёта в Allure
 
 ### Общий отчёт о пройденном тесте
-<img src="" width="630" height="320"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Screenshot_1.png" width="630" height="320"/>
 
 ### Детальный отчёт о пройденном тесте
 
