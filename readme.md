@@ -1,4 +1,4 @@
-## Проект UI автотестов Яндекс.Самокат <a target="_blank" href="https://www.qa-scooter.praktikum-services.ru ">Яндекс.Самокат</a>
+## Проект UI автотестов <a target="_blank" href="https://www.qa-scooter.praktikum-services.ru ">Яндекс.Самокат</a>
 ___
 ### Список проверок, реализованных в UI-автотестах
 1. 
