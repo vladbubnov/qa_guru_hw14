@@ -5,7 +5,7 @@ ___
 1. 
 ___
 ### Используемые инструменты
-<img title="Python" src="pictures/icons/python.svg" height="50" width="50"/> <img title="Pytest" src="pictures/icons/pytest.svg" height="40" width="40"/> <img title="Allure Report" src="pictures/icons/allure_report.png" height="40" width="40"/> <img title="GitHub" src="pictures/icons/github.svg" height="40" width="40"/> <img title="Selenoid" src="pictures/icons/selenoid.png" height="40" width="40"/> <img title="Selene" src="pictures/icons/selene.png" height="40" width="40"/> <img title="Pycharm" src="pictures/icons/pycharm-original.svg" height="40" width="40"/> <img title="Telegram" src="pictures/icons/telegram.png" height="40" width="40"/> <img title="Jenkins" src="pictures/icons/jenkins-original.svg" height="40" width="40"/> <img title="Allure TestOps" src="pictures/icons/allure_testops.svg" height="40" width="40"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="50" width="50" /><img src="https://testirovshik.com/wp-content/uploads/2023/06/selenium-logo.png" height="40" width="40" /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1483px-Jenkins_logo.svg.png" height="40" width="40" /><img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" height="40" width="40" /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/800px-Telegram_Messenger.png" height="40" width="40" />
 ## Пример отчёта в Allure
 
 ### Общий отчёт о пройденном тесте
