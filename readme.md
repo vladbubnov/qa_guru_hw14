@@ -1,4 +1,5 @@
-## Проект UI автотестов Яндекс.Самокат 
+## Проект UI автотестов Яндекс.Самокат
+<a target="_blank" href="https://www.qa-scooter.praktikum-services.ru ">Яндекс.Самокат</a>
 qa-scooter.praktikum-services.ru 
 ___
 ## Стек:
