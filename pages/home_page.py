@@ -16,13 +16,8 @@ class HomePage:
     def click_accept_cookie(self):
         browser.element("#rcc-confirm-button").click()
 
-    def click_accept_cookie(self):
-        browser.element("#rcc-confirm-button").click()
-
     def turn_questions_about_important(self):
         element = browser.element("//div[contains(@class, 'Home_FAQ')]")
-
-        # Выполняем прокрутку к элементу
         element.perform(command.js.scroll_into_view)
 
     def click_dropdown_list(self, dropdown_id):
