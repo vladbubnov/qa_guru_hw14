@@ -3,6 +3,9 @@ from selene import browser, by, have
 
 class OrderPage:
 
+    def open(self, browser_management):
+        browser_management.open("/order")
+
     def fill_first_name(self, value):
         browser.element("[placeholder='* Имя']").type(value)
 

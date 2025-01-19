@@ -19,11 +19,10 @@ test_data = load_test_data_from_csv(csv_path)
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
 @pytest.mark.parametrize("dropdown_id, expected_dropdown_text, expected_dropdown_value_text", test_data)
 def test_dropdown_list(browser_management, dropdown_id, expected_dropdown_text, expected_dropdown_value_text):
-    browser = browser_management
     home_page = HomePage()
 
     with allure.step("Открываем домашнюю страницу"):
-        browser.open("/")
+        home_page.open(browser_management)
 
     with allure.step("Переход к блоку о важном"):
         home_page.turn_questions_about_important()

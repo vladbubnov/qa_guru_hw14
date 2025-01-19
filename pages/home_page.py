@@ -3,6 +3,9 @@ from selene import browser, have, command, be
 
 class HomePage:
 
+    def open(self, browser_management):
+        browser_management.open("/")
+
     def click_order_header_btn(self):
         browser.element("//div[contains(@class, 'Header_Nav')]/button[contains(@class, "
                         "'Button_Button__ra12g')]").click()

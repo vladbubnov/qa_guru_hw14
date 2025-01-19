@@ -13,12 +13,11 @@ from pages.order_page import OrderPage
 @allure.description("Проверка заполнения полей")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
 def test_order_in_header_button(browser_management):
-    browser = browser_management
     order_page = OrderPage()
     user = users.user
 
     with allure.step("Открываем страницу заказа"):
-        browser.open("/order")
+        order_page.open(browser_management)
 
     with allure.step("Создаем заказ"):
         order_page.create_order(user.first_name, user.last_name, user.address, user.station, user.phone_number,
@@ -37,11 +36,10 @@ def test_order_in_header_button(browser_management):
 @allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в хедере")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
 def test_order_btn_on_header(browser_management):
-    browser = browser_management
     home_page = HomePage()
 
     with allure.step("Открываем домашнюю страницу"):
-        browser.open("/")
+        home_page.open(browser_management)
 
     with allure.step("Нажимаем на кнопку 'Заказать' в хедере"):
         home_page.click_order_header_btn()
@@ -56,11 +54,10 @@ def test_order_btn_on_header(browser_management):
 @allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в футере")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
 def test_order_btn_on_footer(browser_management):
-    browser = browser_management
     home_page = HomePage()
 
     with allure.step("Открываем домашнюю страницу"):
-        browser.open("/")
+        home_page.open(browser_management)
 
     with allure.step("Закрываем сообщение и использовании кук"):
         home_page.click_accept_cookie()
