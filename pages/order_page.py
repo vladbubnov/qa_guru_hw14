@@ -9,7 +9,6 @@ class OrderPage:
     def fill_first_name(self, value):
         browser.element("[placeholder='* Имя']").type(value)
 
-
     def fill_last_name(self, value):
         browser.element("[placeholder='* Фамилия']").type(value)
 
@@ -72,20 +71,18 @@ class OrderPage:
         self.click_confirm_btn()
         self.click_status_btn()
 
-
-
     def should_user_with(self, first_name, last_name, address, station, phone_number, delivery_date,
                          period_rent, bike_colour):
         (browser.element("//div[contains(@class, 'Track_OrderInfo__2fpDL')]")
-            .all("//div[contains(@class, 'Track_Value__15eEX')]")
-            .even.should(have.exact_texts(
-                first_name,
-                last_name,
-                address,
-                station,
-                phone_number,
-                delivery_date,
-                period_rent,
-                bike_colour
-            )
+        .all("//div[contains(@class, 'Track_Value__15eEX')]")
+        .even.should(have.exact_texts(
+            first_name,
+            last_name,
+            address,
+            station,
+            phone_number,
+            delivery_date,
+            period_rent,
+            bike_colour
+        )
         ))
