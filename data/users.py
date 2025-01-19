@@ -1,7 +1,6 @@
 import dataclasses
 import datetime
 from enum import Enum
-import random
 
 from faker import Faker
 

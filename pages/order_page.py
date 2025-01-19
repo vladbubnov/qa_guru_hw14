@@ -1,4 +1,4 @@
-from selene import browser, by, be, have
+from selene import browser, by, have
 
 
 class OrderPage:
@@ -46,6 +46,29 @@ class OrderPage:
 
     def click_status_btn(self):
         browser.element(by.text("Посмотреть статус")).click()
+
+    def fill_user_information(self, first_name, last_name, address, station, phone_number):
+        self.fill_first_name(first_name)
+        self.fill_last_name(last_name)
+        self.fill_address(address)
+        self.fill_station(station)
+        self.fill_phone_number(phone_number)
+
+    def fill_order_detail(self, date_delivery, rent_period, bike_colour):
+        self.fill_date_delivery(date_delivery)
+        self.fill_rent_period(rent_period)
+        self.fill_bike_colour(bike_colour)
+        self.fill_comment("Тестовый комментарий")
+
+    def create_order(self, first_name, last_name, address, station, phone_number, date_delivery, rent_period,
+                     bike_colour):
+        self.fill_user_information(first_name, last_name, address, station, phone_number)
+        self.click_next_btn()
+        self.fill_order_detail(date_delivery, rent_period, bike_colour)
+        self.click_order_btn()
+        self.click_confirm_btn()
+        self.click_status_btn()
+
 
 
     def should_user_with(self, first_name, last_name, address, station, phone_number, delivery_date,
