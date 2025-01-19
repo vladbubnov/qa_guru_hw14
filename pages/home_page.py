@@ -8,7 +8,7 @@ class HomePage:
 
     def click_order_header_btn(self):
         browser.element("//div[contains(@class, 'Header_Nav')]/button[contains(@class, "
-                        "'Button_Button__ra12g')]").click()
+                        "'Button_Button')]").click()
 
     def click_order_footer_btn(self):
         browser.element("//div[contains(@class, 'Home_FinishButton')]/button").click()

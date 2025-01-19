@@ -40,8 +40,8 @@ class OrderPage:
         browser.element("[placeholder='Комментарий для курьера']").type(value)
 
     def click_order_btn(self):
-        browser.element("//button[contains(@class, 'Button_Button__ra12g') and contains(@class, "
-                        "'Button_Middle__1CSJM') and text()='Заказать']").click()
+        browser.element("//button[contains(@class, 'Button_Button') and contains(@class, "
+                        "'Button_Middle') and text()='Заказать']").click()
 
     def click_confirm_btn(self):
         browser.element(by.text("Да")).click()
@@ -73,8 +73,8 @@ class OrderPage:
 
     def should_user_with(self, first_name, last_name, address, station, phone_number, delivery_date,
                          period_rent, bike_colour):
-        (browser.element("//div[contains(@class, 'Track_OrderInfo__2fpDL')]")
-        .all("//div[contains(@class, 'Track_Value__15eEX')]")
+        (browser.element("//div[contains(@class, 'Track_OrderInfo')]")
+        .all("//div[contains(@class, 'Track_Value')]")
         .even.should(have.exact_texts(
             first_name,
             last_name,
