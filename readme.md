@@ -19,7 +19,9 @@ ___
 
 <img src="https://github.com/vladbubnov/jpeg/blob/main/image.png" width="630" height="320"/>
 
-2. Нажать "**Build Now**".
+2. Нажать "**Build with Parameters**".
+<img src="https://github.com/vladbubnov/jpeg/blob/main/image.png" width="630" height="320"/>
+3. Выбрать браузер и версию в которой нужно запустить тесты
 
 ---
 ## Пример отчёта в Allure
