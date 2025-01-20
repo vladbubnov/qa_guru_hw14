@@ -17,7 +17,7 @@ ___
 #### Для запуска автотестов в Jenkins
 1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/qa_guru_hw14_vladislav_bubnov/)
 
-<img src="https://github.com/vladbubnov/jpeg/blob/main/image.png" width="930" height="320"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/image.png" width="930" height="520"/>
 
 2. Нажать "**Build with Parameters**".
 3. Выбрать браузер и версию в которой нужно запустить тесты
