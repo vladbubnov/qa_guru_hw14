@@ -26,7 +26,7 @@ ___
 ## Пример отчёта в Allure
 ___
 ### Общий отчёт о пройденном тесте
-<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.00.png" width="630" height="520"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.00.png" width="930" height="320"/>
 ___
 ### Детальный отчёт о пройденном тесте
 ___
