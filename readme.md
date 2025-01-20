@@ -28,11 +28,11 @@ ___
 ___
 ### Общий отчёт о пройденном тесте
 <img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.00.png" width="930" height="520"/>
-___
+
 ### Детальный отчёт о пройденном тесте
 ___
 <img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.50.47.png" width="930" height="520"/>
-___
+
 ### Отчёт о прохождении теста в Telegram
 ___
 <img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.24.png" width="930" height="520"/>
