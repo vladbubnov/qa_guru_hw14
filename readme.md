@@ -21,17 +21,17 @@ ___
 
 2. Нажать "**Build with Parameters**".
 3. Выбрать браузер и версию в которой нужно запустить тесты
-<img src="https://github.com/vladbubnov/jpeg/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-01-20%20%D0%B2%2018.32.24.png" width="630" height="320"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-01-20%20%D0%B2%2018.32.24.png" width="930" height="520"/>
 ---
 ## Пример отчёта в Allure
 ___
 ### Общий отчёт о пройденном тесте
-<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.00.png" width="930" height="320"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.00.png" width="930" height="520"/>
 ___
 ### Детальный отчёт о пройденном тесте
 ___
-<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.50.47.png" width="630" height="320"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.50.47.png" width="930" height="520"/>
 ___
 ### Отчёт о прохождении теста в Telegram
 ___
-<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.24.png" width="300" height="320"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.24.png" width="930" height="520"/>
