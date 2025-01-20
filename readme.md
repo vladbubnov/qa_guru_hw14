@@ -17,7 +17,7 @@ ___
 #### Для запуска автотестов в Jenkins
 1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/qa_guru_hw14_vladislav_bubnov/)
 
-![jenkins job main page](pictures/Jenkins_job_main_page.jpg)
+<img src="https://github.com/vladbubnov/jpeg/blob/main/image.png" width="630" height="320"/>
 
 2. Нажать "**Build Now**".
 
