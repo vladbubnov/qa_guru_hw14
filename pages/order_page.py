@@ -1,4 +1,4 @@
-from selene import browser, by, have
+from selene import browser, by, have, be
 
 
 class OrderPage:
@@ -86,3 +86,24 @@ class OrderPage:
             bike_colour
         )
         ))
+
+    def get_order_number(self):
+        return (browser.element("//input[contains(@class, 'Input_Input') and contains(@class, 'Track_Input')]")
+                .get_attribute('placeholder'))
+
+    def click_order_status(self):
+        browser.element("[placeholder='Введите номер заказа']").click()
+
+    def fill_order_number(self, value):
+        browser.element("[placeholder='Введите номер заказа']").type(value)
+
+    def click_go_btn(self):
+        browser.element("//button[contains(@class, 'Button_Button') and contains(@class, 'Header_Button')]").click()
+
+    def search_order(self, order_number):
+        self.click_order_status()
+        self.fill_order_number(order_number)
+        self.click_go_btn()
+
+    def should_visible_status_order(self):
+        browser.element("//div[contains(@class, 'Track_OrderRoadmap')]").should(be.visible)

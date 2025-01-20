@@ -12,7 +12,7 @@ from pages.order_page import OrderPage
 @allure.label("owner", "Vladislav Bubnov")
 @allure.description("Проверка заполнения полей")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
-def test_order_in_header_button(remote_run):
+def test_order(remote_run):
     order_page = OrderPage()
     user = users.user
 
