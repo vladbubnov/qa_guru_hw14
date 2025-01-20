@@ -12,10 +12,10 @@ ___
 
 ___
 ### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Slinkov_online_market_ui_autotests/)
+> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/qa_guru_hw14_vladislav_bubnov/)
 
 #### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Slinkov_online_market_ui_autotests/)
+1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/qa_guru_hw14_vladislav_bubnov/)
 
 ![jenkins job main page](pictures/Jenkins_job_main_page.jpg)
 
