@@ -23,7 +23,7 @@ def load_env():
 
 
 @pytest.fixture(scope='function')
-def browser_management(request):
+def remote_run(request):
     browser_name = request.config.getoption('browser_name') or DEFAULT_BROWSER_NAME
     browser_version = request.config.getoption('browser_version') or DEFAULT_BROWSER_VERSION
 
@@ -58,5 +58,16 @@ def browser_management(request):
     attach.add_logs(browser)
     attach.add_html(browser)
     attach.add_video(browser)
+
+    browser.quit()
+
+
+@pytest.fixture(scope='function')
+def local_run(request):
+    browser.config.window_height = 1080
+    browser.config.window_width = 1920
+    browser.config.base_url = 'https://qa-scooter.praktikum-services.ru'
+
+    yield browser
 
     browser.quit()

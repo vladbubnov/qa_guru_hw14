@@ -18,11 +18,11 @@ test_data = load_test_data_from_csv(csv_path)
 @allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в футере")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
 @pytest.mark.parametrize("dropdown_id, expected_dropdown_text, expected_dropdown_value_text", test_data)
-def test_dropdown_list(browser_management, dropdown_id, expected_dropdown_text, expected_dropdown_value_text):
+def test_dropdown_list(remote_run, dropdown_id, expected_dropdown_text, expected_dropdown_value_text):
     home_page = HomePage()
 
     with allure.step("Открываем домашнюю страницу"):
-        home_page.open(browser_management)
+        home_page.open(remote_run)
 
     with allure.step("Переход к блоку о важном"):
         home_page.turn_questions_about_important()

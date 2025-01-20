@@ -12,12 +12,12 @@ from pages.order_page import OrderPage
 @allure.label("owner", "Vladislav Bubnov")
 @allure.description("Проверка заполнения полей")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
-def test_order_in_header_button(browser_management):
+def test_order_in_header_button(remote_run):
     order_page = OrderPage()
     user = users.user
 
     with allure.step("Открываем страницу заказа"):
-        order_page.open(browser_management)
+        order_page.open(remote_run)
 
     with allure.step("Создаем заказ"):
         order_page.create_order(user.first_name, user.last_name, user.address, user.station, user.phone_number,
@@ -35,11 +35,11 @@ def test_order_in_header_button(browser_management):
 @allure.label("owner", "Vladislav Bubnov")
 @allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в хедере")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
-def test_order_btn_on_header(browser_management):
+def test_order_btn_on_header(remote_run):
     home_page = HomePage()
 
     with allure.step("Открываем домашнюю страницу"):
-        home_page.open(browser_management)
+        home_page.open(remote_run)
 
     with allure.step("Нажимаем на кнопку 'Заказать' в хедере"):
         home_page.click_order_header_btn()
@@ -53,11 +53,11 @@ def test_order_btn_on_header(browser_management):
 @allure.label("owner", "Vladislav Bubnov")
 @allure.description("Тест проверяет редирект на форму заказа самоката при нажатии кнопки 'Заказать' в футере")
 @allure.link("https://qa-scooter.praktikum-services.ru/", name="Testing")
-def test_order_btn_on_footer(browser_management):
+def test_order_btn_on_footer(remote_run):
     home_page = HomePage()
 
     with allure.step("Открываем домашнюю страницу"):
-        home_page.open(browser_management)
+        home_page.open(remote_run)
 
     with allure.step("Закрываем сообщение и использовании кук"):
         home_page.click_accept_cookie()
