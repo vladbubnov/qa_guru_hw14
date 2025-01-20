@@ -32,7 +32,7 @@ ___
 
 ### Детальный отчёт о пройденном тесте
 ___
-<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.50.47.png" width="930" height="520"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.50.47.png" width="630" height="520"/>
 
 ### Отчёт о прохождении теста в Telegram
 ___
