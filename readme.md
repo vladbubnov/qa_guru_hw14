@@ -36,4 +36,4 @@ ___
 
 ### Отчёт о прохождении теста в Telegram
 ___
-<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.24.png" width="320" height="520"/>
+<img src="https://github.com/vladbubnov/jpeg/blob/main/Снимок экрана 2025-01-15 в 19.51.24.png" width="500" height="520"/>
