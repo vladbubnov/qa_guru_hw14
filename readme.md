@@ -9,8 +9,8 @@ ___
 ___
 ### Используемые инструменты
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="50" width="50" /><img src="https://testirovshik.com/wp-content/uploads/2023/06/selenium-logo.png" height="50" width="50" /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1483px-Jenkins_logo.svg.png" height="50" width="45" /><img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" height="50" width="50" /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/800px-Telegram_Messenger.png" height="50" width="50" /><img src="https://aerokube.com/img/aerokube_logo.svg" height="50" width="50" />
----
 
+___
 ### Запуск автотестов осуществляется с использованием Jenkins
 > [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Slinkov_online_market_ui_autotests/)
 
